@@ -1,0 +1,28 @@
+### POST a new tweet
+POST http://localhost:3000/tweets
+Content-Type: application/json
+
+{
+  "User": {
+    "Name": "Levi Ferreira"
+  },
+  "Text": "A new tweet text"
+}
+
+### GET all tweets
+GET http://localhost:3000/tweets
+
+### GET all emails
+GET http://localhost:3000/mail-list
+
+### POST a new email
+POST http://localhost:3000/mail-list
+Content-Type: application/json
+
+{
+  "emails": [
+    "user1@test.com",
+    "user2@test.com",
+    "user3@test.com"
+  ]
+}
